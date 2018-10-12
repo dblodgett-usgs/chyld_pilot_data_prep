@@ -25,6 +25,16 @@ hu12 <- filter(hu12, HUC_12 %in% c(outlet_hu, upstream_hus))
 
 write_sf(hu12, "hu12.geojson")
 
+catchment_json <- select(hu12, HUC_12, HU_12_DS, name = HU_12_NAME) %>%
+  rename(id = HUC_12, `drains-to` = HU_12_DS) %>%
+  mutate(uri = paste0(wbd_base, id),
+         type = "HY_Catchment")
+
+try(write_sf(catchment_json, 
+             "GSIP/WebContent/resources/catchment/catchments.json", 
+             driver = "GeoJSON"), 
+    silent = FALSE)
+
 fpp_url <- "https://www.sciencebase.gov/catalogMaps/mapping/ows/5762b664e4b07657d19a71ea?service=wfs&request=getfeature&version=1.0.0&typename=sb:fpp&outputFormat=application%2fjson&srsName=EPSG:4326"
 fpp_data <- httr::GET(fpp_url)
 fpp <- sf::read_sf(rawToChar(fpp_data$content))

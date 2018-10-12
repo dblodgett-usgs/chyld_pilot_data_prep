@@ -1,84 +1,136 @@
-library(sf)
-library(dplyr)
-library(tidyr)
-library(rdflib)
+source("rdf_utils.R")
 
-wbd_base <- "http://localhost/id/hu/"
-wbd_info_base <- "http://localhost/gsip/info/hu/"
-hy_base <- "https://www.opengis.net/def/hy_features/ontology/hyf/"
-rdf_base <- "http://www.w3.org/2000/01/rdf-schema#"
-dct_base <- "http://purl.org/dc/terms/"
-wfs_base <- "https://cida.usgs.gov/nwc/geoserver/WBD/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=WBD:huc12&outputFormat=application%2Fjson&cql_filter=huc12="
-html_base <- "https://cida.usgs.gov/nwc/#!waterbudget/huc/"
+hu12 <- read_sf("hu12.geojson") %>% 
+  st_set_geometry(NULL)
 
-hu12 <- read_sf("data_prep/hu12.geojson")
-hu12_outlet <- read_sf("data_prep/hu12_outlet.geojson") %>%
-  select(HUC_12)
-encompassing_basin <- read_sf("data_prep/outlet_hu.geojson")
+hu12_outlet <- read_sf("hu12_outlet.geojson") %>%
+  select(HUC_12) 
+
+encompassing_basin <- read_sf("outlet_hu.geojson")
 outlet_hu <- paste0(wbd_base, encompassing_basin$huc12)
 
-hu_ld <- st_set_geometry(hu12, NULL) %>%
-  select(hu12 = HUC_12, lowerCatchment = HU_12_DS, label = HU_12_NAME) %>%
-  mutate(subject = paste0(wbd_base, hu12), 
-         lowerCatchment = paste0(wbd_base, lowerCatchment),
-         label = label,
-         type = "https://www.opengis.net/def/hy_features/ontology/hyf/HY_Catchment") %>%
-  mutate(lowerCatchment = ifelse(subject == outlet_hu, 
-                                 "https://geoconnex.ca/id/catchment/02OJ*CA",
-                                 lowerCatchment))
+##### Primary HU12 Features and Representations #####
+hu12_subject <- paste0(wbd_base, hu12$HUC_12)
 
-hu_wfs <- select(hu_ld, subject = subject, hu12) %>%
-  mutate(format = "application/vnd.geo+json",
-         seeAlso = paste0(wfs_base, "%27", hu12, "%27"),
-         label = "GeoJSON") %>%
-  select(-hu12)
+rdf <- mint_feature(subject = hu12_subject, 
+                      label = hu12$HU_12_NAME, 
+                      type = "https://www.opengis.net/def/hy_features/ontology/hyf/HY_Catchment",
+                      rdf = rdf())
 
-hu_html <- select(hu_ld, subject = subject, hu12) %>%
-  mutate(format = "text/html",
-         seeAlso = paste0(wbd_info_base, hu12),
-         label = "Information Index") %>%
-  select(-hu12)
+rdf <- create_association(subject = hu12_subject,
+                          predicate = "https://www.opengis.net/def/hy_features/ontology/hyf/lowerCatchment",
+                          object = ifelse(hu12$HUC_12 == outlet_hu, 
+                                          "https://geoconnex.ca/id/catchment/02OJ*CA",
+                                          paste0(wbd_base, hu12$HU_12_DS)),
+                          rdf = rdf)
 
-hu_html_nwc <- select(hu_ld, subject = subject, hu12) %>%
-  mutate(format = "text/html",
-         seeAlso = paste0(html_base, hu12),
-         label = "Waterbudget Summary") %>%
-  select(-hu12)
-  
-split_seealso <- function(x) {
-  rbind(select(x, subject, object = seeAlso) %>%
-          mutate(predicate = paste0(rdf_base, "seeAlso")),
-        select(x, subject = seeAlso, object = format) %>%
-          mutate(predicate = paste0(dct_base, "format")),
-        select(x, subject = seeAlso, object = label) %>%
-          mutate(predicate = paste0(rdf_base, "label"))) %>%
-    select(subject, predicate, object)
+rdf <- create_seealso(subject = hu12_subject, 
+                         seealso = paste0(wfs_base, "%27", hu12$HUC_12, "%27"),
+                         format = "application/vnd.geo+json",
+                         label = "GeoJSON",
+                         rdf = rdf)
+
+rdf <- create_seealso(subject = hu12_subject, 
+                      seealso = paste0(wbd_info_base, hu12$HUC_12),
+                      format = "text/html",
+                      label = "Information Index",
+                      rdf = rdf)
+
+rdf <- create_seealso(subject = hu12_subject, 
+                          seealso = paste0(wbd_nwc_base, hu12$HUC_12),
+                          format = "text/html",
+                          label = "Waterbudget Summary",
+                          rdf = rdf)
+
+##### HU12 Nexuses Based on All HU12 Outlets that Contribute to a Given HU. #####
+hu12_outlet <- left_join(hu12_outlet, 
+                         select(hu12, 
+                                HUC_12, HU_12_DS, HU_12_NAME), 
+                         by = "HUC_12")
+
+from_hucs <- sapply(hu12_outlet$HUC_12, fromHUC_finder, 
+                    hucs = hu12_outlet$HUC_12, 
+                    tohucs = hu12_outlet$HU_12_DS)
+cats_with_inflows <- which(lapply(from_hucs, length) > 0)
+
+
+nexus_subject <- paste0(wbd_nexus_base, 
+                        paste0(hu12_outlet$HUC_12[cats_with_inflows], 
+                               "-inflow"))
+
+rdf <- mint_feature(subject = nexus_subject,
+                    type = "https://www.opengis.net/def/hy_features/ontology/hyf/HY_HydroNexus",
+                    label = paste("Nexus contributing to", hu12_outlet$HU_12_NAME[cats_with_inflows]),
+                    rdf = rdf)
+
+rdf <- create_association(subject = nexus_subject, 
+                          predicate = "https://www.opengis.net/def/hy_features/ontology/hyf/receivingCatchment", 
+                          object = paste0(wbd_base, hu12_outlet$HUC_12[cats_with_inflows]), 
+                          rdf = rdf)
+
+##### Create nexus associations to catchments and  
+##### a representation as a collection of inflows. #####
+hy_in <- from_hucs[cats_with_inflows]
+contributing_cats <- data.frame(nexus = character(), 
+                                contributingCatchment = character(), 
+                                stringsAsFactors = FALSE)
+
+# Representation of the nexus as a collection of inflows.
+nexus_wfs <- data.frame(nexus = names(hy_in), 
+                        wfs = "", 
+                        stringsAsFactors = FALSE)
+
+# Create wfs calls for nexus representaton and contributing 
+# catchments list for association to nexuses.
+for(h in names(hy_in)) {
+  cql <- paste0("HUC_12%20IN%20(%27", 
+               paste0(hy_in[[h]], collapse = "%27,%20%27"),
+               "%27)")
+  nexus_wfs$wfs[which(nexus_wfs$nexus == h)] <- paste0(fpp_wfs_base, cql)
+  for(c in hy_in[[h]]) {
+    contributing_cats <- rbind(contributing_cats,
+                            data.frame(nexus = h, 
+                                       contributingCatchment = c, 
+                                       stringsAsFactors = FALSE))
+  }
 }
 
-hu_ld <- select(hu_ld, -hu12) %>%
-  rename(subject = subject, 
-         !!paste0(hy_base, "lowerCatchment") := lowerCatchment,
-         !!paste0(rdf_base, "label") := label,
-         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" = type)
+rdf  <- create_seealso(subject = paste0(wbd_nexus_base, nexus_wfs$nexus, "-inflow"),
+                       seealso = nexus_wfs$wfs,
+                       format = "application/vnd.geo+json",
+                       label = "GeoJSON",
+                       rdf = rdf)
 
-hu_ld <- gather(hu_ld, predicate, object, -subject) %>%
-  rbind(split_seealso(hu_wfs)) %>%
-  rbind(split_seealso(hu_html)) %>%
-  rbind(split_seealso(hu_html_nwc))
+rdf <- create_association(subject = paste0(wbd_nexus_base, 
+                                           contributing_cats$nexus, 
+                                           "-inflow"), 
+                          predicate = "https://www.opengis.net/def/hy_features/ontology/hyf/contributingCatchment", 
+                          object = paste0(wbd_base, contributing_cats$contributingCatchment), 
+                          rdf = rdf)
 
-rdf <- rdf()
+# Could add HY_HydrologicLocation features for the outlet of HU12s that are part of the nexues above.
+# outlet_subject <- paste0(wbd_outlet_base, hu12_outlet$HUC_12)
+# 
+# rdf <- mint_feature(subject = outlet_subject,
+#                     label = paste("Outlet of", hu12_outlet$HU_12_NAME), 
+#                     type = "https://www.opengis.net/def/hy_features/ontology/hyf/HY_HydroloLocation", 
+#                     rdf = rdf)
+# 
+# rdf <- create_association(subject = outlet_subject, 
+#                           predicate = "https://www.opengis.net/def/hy_features/ontology/hyf/realizedNexus",
+#                           object = paste0(wbd_nexus_base, hu12_outlet$HU_12_DS, "-inflow"),
+#                           rdf = rdf)
+# 
+# rdf <- create_seealso(subject = outlet_subject, 
+#                       seealso = paste0(wbd_outlet_info_base, hu12_outlet$HUC_12),
+#                       format = "text/html",
+#                       label = "Information Index",
+#                       rdf = rdf)
+# 
+# rdf <- create_seealso(subject = outlet_subject, 
+#                       seealso = paste0(fpp_wfs_base, "HUC_12%20IN%20(%27", hu12_outlet$HUC_12, "%27)"),
+#                       format = "application/vnd.geo+json",
+#                       label = "GeoJSON",
+#                       rdf = rdf)
 
-for(r in seq(1, nrow(hu_ld))) {
-  rdf <- rdf_add(rdf, hu_ld$subject[r], hu_ld$predicate[r], hu_ld$object[r])
-}
-
-rdflib::rdf_serialize(rdf, "GSIP/WebContent/repos/gsip/relations.ttl", "turtle")
-
-catchment_json <- select(hu12, HUC_12, HU_12_DS, name = HU_12_NAME) %>%
-  rename(id = HUC_12, `drains-to` = HU_12_DS) %>%
-  mutate(uri = paste0(wbd_base, id),
-         type = "HY_Catchment")
-
-write_sf(catchment_json, "GSIP/WebContent/resources/catchment/catchments.json", driver = "GeoJSON")
-
-
+rdflib::rdf_serialize(rdf, "../GSIP/WebContent/repos/gsip/relations.ttl", "turtle")

@@ -1,3 +1,4 @@
 *.rds
 *.gdb
 *.geojson
+.Rproj.user
