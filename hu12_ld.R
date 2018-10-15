@@ -18,8 +18,13 @@ rdf <- mint_feature(subject = hu12_subject,
                       rdf = rdf())
 
 rdf <- create_association(subject = hu12_subject,
+                          predicate ="http://www.w3.org/1999/02/22-rdf-syntax-ns#type", 
+                          object ="https://www.opengis.net/def/hy_features/ontology/hyf/HY_DendriticCatchment",
+                          rdf = rdf)
+
+rdf <- create_association(subject = hu12_subject,
                           predicate = "https://www.opengis.net/def/hy_features/ontology/hyf/lowerCatchment",
-                          object = ifelse(hu12$HUC_12 == outlet_hu, 
+                          object = ifelse(hu12_subject == outlet_hu, 
                                           "https://geoconnex.ca/id/catchment/02OJ*CA",
                                           paste0(wbd_base, hu12$HU_12_DS)),
                           rdf = rdf)
