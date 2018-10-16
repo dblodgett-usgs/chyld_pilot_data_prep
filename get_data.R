@@ -57,7 +57,7 @@ fpp <- filter(fpp, HUC_12 %in% hu12$HUC_12)
 write_sf(fpp, "hu12_outlet.geojson")
 
 hu12 <- read_sf("hu12.geojson")
-
+hu08_sf <- read_sf("hu08.geojson")
 gages <- read_sf(gages_wfs_base) 
 
 gages <- st_intersection(gages, st_union(st_geometry(hu12)))
@@ -81,4 +81,15 @@ nat_aq_sub <- filter(nat_aq, lengths(intersects) > 0) %>%
 
 write_sf(nat_aq_sub, "aquifers.geojson")
 
-  
+wells <- read_sf(wells_wfs_base)
+
+write_sf(wells, "ngwmn_wells.geojson")
+
+wells <- st_intersection(wells, st_union(st_geometry(hu12)))
+
+wells <- st_join(wells, select(hu12, "HUC_12"))
+
+wells <- st_join(wells, select(hu08_sf, huc8))
+
+write_sf(wells, "wells.geojson")
+
