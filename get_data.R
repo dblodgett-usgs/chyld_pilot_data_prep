@@ -67,3 +67,18 @@ gages <- st_join(gages, select(hu12, "HUC_12"))
 gages <- st_join(gages, select(hu08_sf, huc8))
 
 write_sf(gages, "gages.geojson")
+
+ngwmn_wfs_base <- "https://cida.usgs.gov/ngwmn/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ngwmn:aquifrp025&outputFormat=application%2Fjson"
+nat_aq <- httr::GET(ngwmn_wfs_base)
+nat_aq <- sf::read_sf(rawToChar(nat_aq$content))
+nat_aq <- st_transform(nat_aq, st_crs(hu12))
+write_sf(nat_aq, "nat_aq.geojson")
+
+intersects <- st_intersects(nat_aq, hu12)
+
+nat_aq_sub <- filter(nat_aq, lengths(intersects) > 0) %>%
+  select(ROCK_NAME, ROCK_TYPE, AQ_NAME, AQ_CODE, NAT_AQFR_CD, LINK)
+
+write_sf(nat_aq_sub, "aquifers.geojson")
+
+  
