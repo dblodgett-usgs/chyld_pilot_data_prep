@@ -44,7 +44,7 @@ catchment_json <- select(hu12, HUC_12, HU_12_DS, name = HU_12_NAME) %>%
          type = "HY_Catchment")
 
 try(write_sf(catchment_json, 
-             "GSIP/WebContent/resources/catchment/catchments.json", 
+             "../GSIP/WebContent/resources/catchment/catchments.json", 
              driver = "GeoJSON"), 
     silent = FALSE)
 

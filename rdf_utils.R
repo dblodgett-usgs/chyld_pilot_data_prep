@@ -5,22 +5,22 @@ library(rdflib)
 library(HUCAgg)
 
 # Feature NIR base urls
-wbd_base <- "http://localhost/id/hu/"
-wbd_outlet_base <- "http://localhost/id/hu_outlet/"
-wbd_nexus_base <- "http://localhost/id/hu_nexus/"
-nwis_gage_base <- "http://localhost/id/gage/"
-nwis_hu_hydrometricnetwork_base <- "http://localhost/id/gage_hu_network/"
-nat_aq_base <- "http://localhost/id/nat_aq/"
-wells_base <- "http://localhost/id/well/"
+wbd_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/hu/"
+wbd_outlet_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/hu_outlet/"
+wbd_nexus_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/hu_nexus/"
+nwis_gage_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/gage/"
+nwis_hu_hydrometricnetwork_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/gage_hu_network/"
+nat_aq_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/nat_aq/"
+wells_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/well/"
 
 # gsip base urls
-wbd_info_base <- "http://localhost/info/hu/"
-wbd_outlet_info_base <- "http://localhost/info/hu_outlet/"
-wbd_nexus_info_base <- "http://localhost/info/hu_nexus/"
-nwis_gage_info_base <- "http://localhost/info/gage/"
-nwis_hu_hydrometricnetwork_info_base <- "http://localhost/info/gage_hu_network/"
-nat_aq_info_base <- "http://localhost/info/nat_aq/"
-wells_info_base <- "http://localhost/info/well/"
+wbd_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/hu/"
+wbd_outlet_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/hu_outlet/"
+wbd_nexus_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/hu_nexus/"
+nwis_gage_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/gage/"
+nwis_hu_hydrometricnetwork_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/gage_hu_network/"
+nat_aq_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/nat_aq/"
+wells_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/well/"
 
 # predicate bases
 hy_base <- "https://www.opengis.net/def/hy_features/ontology/hyf/"

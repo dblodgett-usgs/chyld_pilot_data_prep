@@ -1,6 +1,19 @@
 source("rdf_utils.R")
 
-hu12 <- read_sf("hu12.geojson") %>% 
+hu12 <- read_sf("hu12.geojson")
+
+catchment_json <- select(hu12, HUC_12, HU_12_DS, name = HU_12_NAME) %>%
+  rename(id = HUC_12, `drains-to` = HU_12_DS) %>%
+  mutate(uri = paste0(wbd_base, id),
+         type = "HY_Catchment")
+
+unlink("../GSIP/WebContent/resources/catchment/catchments.json")
+
+write_sf(catchment_json,
+             "../GSIP/WebContent/resources/catchment/catchments.json",
+             driver = "GeoJSON")
+
+hu12 <- hu12 %>%
   st_set_geometry(NULL)
 
 hu12_outlet <- read_sf("hu12_outlet.geojson") %>%
