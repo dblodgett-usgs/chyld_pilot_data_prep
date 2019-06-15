@@ -4,23 +4,24 @@ library(tidyr)
 library(rdflib)
 library(HUCAgg)
 
+  
 # Feature NIR base urls
-wbd_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/hu/"
-wbd_outlet_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/hu_outlet/"
-wbd_nexus_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/hu_nexus/"
-nwis_gage_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/gage/"
-nwis_hu_hydrometricnetwork_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/gage_hu_network/"
-nat_aq_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/nat_aq/"
-wells_base <- "https://cida-test.er.usgs.gov/chyld-pilot/id/well/"
+wbd_base <- paste0(domain, "chyld-pilot/id/hu/")
+wbd_outlet_base <- paste0(domain, "chyld-pilot/id/hu_outlet/")
+wbd_nexus_base <- paste0(domain, "chyld-pilot/id/hu_nexus/")
+nwis_gage_base <- paste0(domain, "chyld-pilot/id/gage/")
+nwis_hu_hydrometricnetwork_base <- paste0(domain, "chyld-pilot/id/gage_hu_network/")
+nat_aq_base <- paste0(domain, "chyld-pilot/id/nat_aq/")
+wells_base <- paste0(domain, "chyld-pilot/id/well/")
 
 # gsip base urls
-wbd_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/hu/"
-wbd_outlet_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/hu_outlet/"
-wbd_nexus_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/hu_nexus/"
-nwis_gage_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/gage/"
-nwis_hu_hydrometricnetwork_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/gage_hu_network/"
-nat_aq_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/nat_aq/"
-wells_info_base <- "https://cida-test.er.usgs.gov/chyld-pilot/info/well/"
+wbd_info_base <- paste0(domain, "chyld-pilot/info/hu/")
+wbd_outlet_info_base <- paste0(domain, "chyld-pilot/info/hu_outlet/")
+wbd_nexus_info_base <- paste0(domain, "chyld-pilot/info/hu_nexus/")
+nwis_gage_info_base <- paste0(domain, "chyld-pilot/info/gage/")
+nwis_hu_hydrometricnetwork_info_base <- paste0(domain, "chyld-pilot/info/gage_hu_network/")
+nat_aq_info_base <- paste0(domain, "chyld-pilot/info/nat_aq/")
+wells_info_base <- paste0(domain, "chyld-pilot/info/well/")
 
 # predicate bases
 hy_base <- "https://www.opengis.net/def/hy_features/ontology/hyf/"
@@ -29,13 +30,16 @@ dct_base <- "http://purl.org/dc/terms/"
 
 # Resource base urls
 wfs_base <- "https://cida-test.er.usgs.gov/nwc/geoserver/WBD/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=WBD:huc12&outputFormat=application%2Fjson&cql_filter=huc12="
+wfs_agg_base <- "https://cida-test.er.usgs.gov/nwc/geoserver/WBD/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=WBD:huc12agg&outputFormat=application%2Fjson&cql_filter=huc12="
 hu08_wfs_base <- "https://cida-test.er.usgs.gov/nwc/geoserver/WBD/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=WBD:huc08&outputFormat=application%2Fjson&cql_filter="
 wbd_nwc_base <- "https://cida-test.er.usgs.gov/nwc/#!waterbudget/huc/"
+wbd_acnwc_base <- "https://cida-test.er.usgs.gov/nwc/#!waterbudget/achuc/"
 fpp_wfs_base <- "https://www.sciencebase.gov/catalogMaps/mapping/ows/5762b664e4b07657d19a71ea?service=wfs&request=getfeature&version=1.0.0&typename=sb:fpp&outputFormat=application%2fjson&srsName=EPSG:4326&cql_filter="
 wbd_nwis_base <- "https://waterdata.usgs.gov/hydrological-unit/"
 gages_wfs_base <- "https://cida-test.er.usgs.gov/nwc/geoserver/NWC/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=NWC:gagesII&srsName=EPSG:4326&outputFormat=application%2Fjson"
 nat_aq_wfs_base <- "https://cida-test.er.usgs.gov/ngwmn/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ngwmn:aquifrp025&srsName=EPSG:4326&outputFormat=application%2Fjson"
 wells_wfs_base <- "https://cida-test.er.usgs.gov/ngwmn/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ngwmn:VW_GWDP_GEOSERVER&srsName=EPSG:4326&outputFormat=application%2Fjson"
+nldi_base <- "https://cida-test.er.usgs.gov/nldi/"
 
 split_seealso <- function(x) {
   rbind(select(x, subject, object = seeAlso) %>%
