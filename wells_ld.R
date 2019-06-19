@@ -14,13 +14,13 @@ rdf <- mint_feature(subject = wells_subject,
 
 rdf <- create_seealso(subject = wells_subject, 
                       seealso = paste0(wells_info_base, wells$MY_SITEID),
-                      format = "text/html", 
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"), 
                       label = "Information Index", 
                       rdf = rdf)
 
 rdf <- create_seealso(subject = wells_subject, 
                       seealso = wells$LINK, 
-                      format = "text/html", 
+                      format = c("text/html"), 
                       label = "Well Summary Page", 
                       rdf = rdf)
 

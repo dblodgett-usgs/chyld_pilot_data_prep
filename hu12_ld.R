@@ -50,13 +50,13 @@ rdf <- create_seealso(subject = hu12_subject,
 
 rdf <- create_seealso(subject = hu12_subject, 
                       seealso = paste0(wbd_info_base, hu12$HUC_12),
-                      format = "text/html",
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
 rdf <- create_seealso(subject = hu12_subject, 
                           seealso = paste0(wbd_nwc_base, hu12$HUC_12),
-                          format = "text/html",
+                          format = c("text/html"),
                           label = "Waterbudget Summary",
                           rdf = rdf)
 
@@ -89,13 +89,13 @@ rdf <- create_seealso(subject = hu12_basin_subject,
 
 rdf <- create_seealso(subject = hu12_basin_subject, 
                       seealso = paste0(wbd_info_base, hu12_basin_id),
-                      format = "text/html",
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
 rdf <- create_seealso(subject = hu12_basin_subject, 
                       seealso = paste0(wbd_acnwc_base, hu12$HUC_12),
-                      format = "text/html",
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Waterbudget Summary",
                       rdf = rdf)
 
@@ -215,7 +215,7 @@ rdf <- create_association(subject = outlet_subject,
 
 rdf <- create_seealso(subject = outlet_subject,
                       seealso = paste0(wbd_outlet_info_base, hu12_outlet$HUC_12),
-                      format = "text/html",
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
@@ -248,7 +248,7 @@ rdf <- create_association(subject = flowpath_subject,
 
 rdf <- create_seealso(subject = flowpath_subject,
                       seealso = paste0(wbd_info_base, flowpath_id),
-                      format = "text/html",
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
@@ -275,7 +275,7 @@ rdf <- create_association(subject = network_subject,
 
 rdf <- create_seealso(subject = network_subject,
                       seealso = paste0(wbd_info_base, network_id),
-                      format = "text/html",
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
@@ -301,7 +301,7 @@ rdf <- create_association(subject = hydrometric_network_subject,
 
 rdf <- create_seealso(subject = hydrometric_network_subject,
                       seealso = paste0(wbd_info_base, hydrometric_network_id),
-                      format = "text/html",
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
@@ -327,7 +327,7 @@ rdf <- create_association(subject = hydrometric_network_subject,
 
 rdf <- create_seealso(subject = hydrometric_network_subject,
                       seealso = paste0(wbd_info_base, hydrometric_network_id),
-                      format = "text/html",
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 

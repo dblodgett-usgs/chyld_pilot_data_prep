@@ -13,13 +13,13 @@ rdf <- mint_feature(subject = nwis_gage_subject,
 
 rdf <- create_seealso(subject = nwis_gage_subject, 
                       seealso = paste0(nwis_gage_info_base, gages$STAID),
-                      format = "text/html", 
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"), 
                       label = "Information Index", 
                       rdf = rdf)
 
 rdf <- create_seealso(subject = nwis_gage_subject, 
                       seealso = paste0("https://waterdata.usgs.gov/nwis/inventory?agency_code=USGS&site_no=", gages$STAID), 
-                      format = "text/html", 
+                      format = c("text/html"), 
                       label = "NWIS Site Page", 
                       rdf = rdf)
 
@@ -40,7 +40,7 @@ rdf <- mint_feature(subject = nwis_hu12_hydrometricnetwork_subject,
 
 rdf <- create_seealso(subject = nwis_hu12_hydrometricnetwork_subject, 
                       seealso = paste0(nwis_hu_hydrometricnetwork_info_base, hu12_hydrometricnetwork$hu12),
-                      format = "text/html", 
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"), 
                       label = "Information Index", 
                       rdf = rdf)
 
@@ -76,13 +76,13 @@ rdf <- mint_feature(subject = nwis_hu08_hydrometricnetwork_subject,
 
 rdf <- create_seealso(subject = nwis_hu08_hydrometricnetwork_subject, 
                       seealso = paste0(nwis_hu_hydrometricnetwork_info_base, hu08_hydrometricnetwork$hu08),
-                      format = "text/html", 
+                      format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"), 
                       label = "Information Index", 
                       rdf = rdf)
 
 rdf <- create_seealso(subject = nwis_hu08_hydrometricnetwork_subject, 
                       seealso = paste0(wbd_nwis_base, hu08_hydrometricnetwork$hu08),
-                      format = "text/html", 
+                      format = c("text/html"), 
                       label = "Water Data For the Nation", 
                       rdf = rdf)
 

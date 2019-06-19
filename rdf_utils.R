@@ -60,11 +60,17 @@ add_to_rdf <- function(x, rdf) { # dumb implementation, but it does the job!
 }
 
 create_seealso <- function(subject, seealso, format, label = "", rdf = NULL) {
-  ld <- split_seealso(data.frame(subject = subject, 
-                           seeAlso = seealso, 
-                           format = format, 
-                           label = label, 
-                           stringsAsFactors = FALSE))
+  
+  ld <- lapply(format, function(x) {
+    data.frame(subject = subject, 
+               seeAlso = seealso, 
+               format = x, 
+               label = label, 
+               stringsAsFactors = FALSE)
+  }) %>%
+    bind_rows() %>%
+    split_seealso()
+  
   if (!is.null(rdf)) {
     return(add_to_rdf(ld, rdf))
   } else {
