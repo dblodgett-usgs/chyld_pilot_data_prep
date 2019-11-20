@@ -27,6 +27,7 @@ wells_info_base <- paste0(domain, "chyld-pilot/info/well/")
 hy_base <- "https://www.opengis.net/def/hy_features/ontology/hyf/"
 rdf_base <- "http://www.w3.org/2000/01/rdf-schema#"
 dct_base <- "http://purl.org/dc/terms/"
+schema_base <- "http://schema.org/"
 
 # Resource base urls
 wfs_base <- "https://cida-test.er.usgs.gov/nwc/geoserver/WBD/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=WBD:huc12&outputFormat=application%2Fjson&cql_filter=huc12="
@@ -41,12 +42,12 @@ nat_aq_wfs_base <- "https://cida-test.er.usgs.gov/ngwmn/geoserver/wfs?service=WF
 wells_wfs_base <- "https://cida-test.er.usgs.gov/ngwmn/geoserver/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ngwmn:VW_GWDP_GEOSERVER&srsName=EPSG:4326&outputFormat=application%2Fjson"
 nldi_base <- "https://cida-test.er.usgs.gov/nldi/"
 
-split_seealso <- function(x) {
-  rbind(select(x, subject, object = seeAlso) %>%
-          mutate(predicate = paste0(rdf_base, "seeAlso")),
-        select(x, subject = seeAlso, object = format) %>%
+split_subjectof <- function(x) {
+  rbind(select(x, subject, object = url) %>%
+          mutate(predicate = paste0(schema_base, "subjectOf")),
+        select(x, subject = url, object = format) %>%
           mutate(predicate = paste0(dct_base, "format")),
-        select(x, subject = seeAlso, object = label) %>%
+        select(x, subject = url, object = label) %>%
           mutate(predicate = paste0(rdf_base, "label"))) %>%
     select(subject, predicate, object)
 }
@@ -59,17 +60,16 @@ add_to_rdf <- function(x, rdf) { # dumb implementation, but it does the job!
   return(rdf)
 }
 
-create_seealso <- function(subject, seealso, format, label = "", rdf = NULL) {
-  
+create_subjectof <- function(subject, url, format, label = "", rdf = NULL) {
   ld <- lapply(format, function(x) {
     data.frame(subject = subject, 
-               seeAlso = seealso, 
+               url = url, 
                format = x, 
                label = label, 
                stringsAsFactors = FALSE)
   }) %>%
     bind_rows() %>%
-    split_seealso()
+    split_subjectof()
   
   if (!is.null(rdf)) {
     return(add_to_rdf(ld, rdf))

@@ -1,4 +1,5 @@
 *.rds
 *.gdb
 *.geojson
+.Rhistory
 .Rproj.user

@@ -1,5 +1,5 @@
 domain <- "https://cida-test.er.usgs.gov/"
-# domain <- "http://localhost/"
+# domain <- "http://localhost:8080/"
 
 source("hu12_ld.R")
 source("hu08_ld.R")

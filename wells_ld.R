@@ -12,14 +12,14 @@ rdf <- mint_feature(subject = wells_subject,
                     type = "http://geosciences.ca/def/groundwater#GW_Well",
                     rdf = rdf)
 
-rdf <- create_seealso(subject = wells_subject, 
-                      seealso = paste0(wells_info_base, wells$MY_SITEID),
+rdf <- create_subjectof(subject = wells_subject, 
+                      url = paste0(wells_info_base, wells$MY_SITEID),
                       format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"), 
                       label = "Information Index", 
                       rdf = rdf)
 
-rdf <- create_seealso(subject = wells_subject, 
-                      seealso = wells$LINK, 
+rdf <- create_subjectof(subject = wells_subject, 
+                      url = wells$LINK, 
                       format = c("text/html"), 
                       label = "Well Summary Page", 
                       rdf = rdf)
@@ -28,8 +28,8 @@ cql = paste0("&cql_filter=MY_SITEID%20IN%20(%27",
              wells$MY_SITEID,
              "%27)")
 
-rdf <- create_seealso(subject = wells_subject, 
-                      seealso = paste0(wells_wfs_base, cql),
+rdf <- create_subjectof(subject = wells_subject, 
+                      url = paste0(wells_wfs_base, cql),
                       format = "application/vnd.geo+json", 
                       label = "GeoJSON", 
                       rdf = rdf)

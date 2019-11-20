@@ -34,20 +34,20 @@ rdf <- mint_feature(subject = nat_aq_subject,
                     rdf = rdf)
 
 cql <- paste0("&cql_filter=NAT_AQFR_CD%20IN%20(%27", aq_merge$NAT_AQFR_CD, "%27)")
-rdf <- create_seealso(subject = nat_aq_subject, 
-                      seealso = paste0(nat_aq_wfs_base, cql),
+rdf <- create_subjectof(subject = nat_aq_subject, 
+                      url = paste0(nat_aq_wfs_base, cql),
                       format = "application/vnd.geo+json",
                       label = "GeoJSON",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = nat_aq_subject, 
-                      seealso = aq_merge$LINK,
+rdf <- create_subjectof(subject = nat_aq_subject, 
+                      url = aq_merge$LINK,
                       format = c("text/html"),
                       label = "Aquifer Summary Page",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = nat_aq_subject, 
-                      seealso = paste0(nat_aq_info_base, aq_merge$NAT_AQFR_CD),
+rdf <- create_subjectof(subject = nat_aq_subject, 
+                      url = paste0(nat_aq_info_base, aq_merge$NAT_AQFR_CD),
                       format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)

@@ -5,20 +5,20 @@ rdf <- create_association(paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_N
                           "https://geoconnex.ca/id/connectedTo",
                           "https://geoconnex.ca/id/LOD_Node/CAN_Hydro_LOD_Node", rdf = rdf)
 
-rdf <- create_seealso(subject = paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node"), 
-                      seealso = "https://raw.githubusercontent.com/dblodgett-usgs/GSIP/master/mockups/id/LOD_Node/US_Hydro_LOD_Node_TTL", 
+rdf <- create_subjectof(subject = paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node"), 
+                      url = "https://raw.githubusercontent.com/dblodgett-usgs/GSIP/master/mockups/id/LOD_Node/US_Hydro_LOD_Node_TTL", 
                       format = "application/x-turtle", 
                       label = "Connection Nodes", 
                       rdf = rdf)
 
-rdf <- create_seealso(subject = paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node"), 
-                      seealso = "https://raw.githubusercontent.com/dblodgett-usgs/GSIP/master/mockups/id/LOD_Node/US_Hydro_LOD_Node_RDF", 
+rdf <- create_subjectof(subject = paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node"), 
+                      url = "https://raw.githubusercontent.com/dblodgett-usgs/GSIP/master/mockups/id/LOD_Node/US_Hydro_LOD_Node_RDF", 
                       format = "application/rdf+xml", 
                       label = "Connection Nodes", 
                       rdf = rdf)
 
-rdf <- create_seealso(subject = paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node"), 
-                      seealso = "https://raw.githubusercontent.com/dblodgett-usgs/GSIP/master/mockups/id/LOD_Node/US_Hydro_LOD_Node_JSONLD", 
+rdf <- create_subjectof(subject = paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node"), 
+                      url = "https://raw.githubusercontent.com/dblodgett-usgs/GSIP/master/mockups/id/LOD_Node/US_Hydro_LOD_Node_JSONLD", 
                       format = "application/ld+json", 
                       label = "Connection Nodes", 
                       rdf = rdf)

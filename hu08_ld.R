@@ -28,26 +28,26 @@ rdf <- create_association(subject = hu08_subject,
 
 cql <- paste0("huc8%20IN%20(%27", hu08$huc8, "%27)")
 
-rdf <- create_seealso(subject = hu08_subject, 
-                      seealso = paste0(hu08_wfs_base, cql),
+rdf <- create_subjectof(subject = hu08_subject, 
+                      url = paste0(hu08_wfs_base, cql),
                       format = "application/vnd.geo+json",
                       label = "GeoJSON",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = hu08_subject, 
-                      seealso = paste0(wbd_info_base, hu08$huc8),
+rdf <- create_subjectof(subject = hu08_subject, 
+                      url = paste0(wbd_info_base, hu08$huc8),
                       format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = hu08_subject, 
-                      seealso = paste0(wbd_nwc_base, hu08$huc8),
+rdf <- create_subjectof(subject = hu08_subject, 
+                      url = paste0(wbd_nwc_base, hu08$huc8),
                       format = c("text/html"),
                       label = "Waterbudget Summary",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = hu08_subject, 
-                      seealso = paste0(wbd_nwis_base, hu08$huc8),
+rdf <- create_subjectof(subject = hu08_subject, 
+                      url = paste0(wbd_nwis_base, hu08$huc8),
                       format = c("text/html"),
                       label = "USGS Data Index",
                       rdf = rdf)

@@ -42,20 +42,20 @@ rdf <- create_association(subject = hu12_subject,
                                           paste0(wbd_base, hu12$HU_12_DS)),
                           rdf = rdf)
 
-rdf <- create_seealso(subject = hu12_subject, 
-                         seealso = paste0(wfs_base, "%27", hu12$HUC_12, "%27"),
+rdf <- create_subjectof(subject = hu12_subject, 
+                         url = paste0(wfs_base, "%27", hu12$HUC_12, "%27"),
                          format = "application/vnd.geo+json",
                          label = "GeoJSON",
                          rdf = rdf)
 
-rdf <- create_seealso(subject = hu12_subject, 
-                      seealso = paste0(wbd_info_base, hu12$HUC_12),
+rdf <- create_subjectof(subject = hu12_subject, 
+                      url = paste0(wbd_info_base, hu12$HUC_12),
                       format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = hu12_subject, 
-                          seealso = paste0(wbd_nwc_base, hu12$HUC_12),
+rdf <- create_subjectof(subject = hu12_subject, 
+                          url = paste0(wbd_nwc_base, hu12$HUC_12),
                           format = c("text/html"),
                           label = "Waterbudget Summary",
                           rdf = rdf)
@@ -81,20 +81,20 @@ rdf <- create_association(subject = hu12_basin_subject,
                                           paste0(wbd_base, hu12$HU_12_DS)),
                           rdf = rdf)
 
-rdf <- create_seealso(subject = hu12_basin_subject, 
-                      seealso = paste0(wfs_agg_base, "%27", hu12$HUC_12, "%27"),
+rdf <- create_subjectof(subject = hu12_basin_subject, 
+                      url = paste0(wfs_agg_base, "%27", hu12$HUC_12, "%27"),
                       format = "application/vnd.geo+json",
                       label = "GeoJSON",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = hu12_basin_subject, 
-                      seealso = paste0(wbd_info_base, hu12_basin_id),
+rdf <- create_subjectof(subject = hu12_basin_subject, 
+                      url = paste0(wbd_info_base, hu12_basin_id),
                       format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = hu12_basin_subject, 
-                      seealso = paste0(wbd_acnwc_base, hu12$HUC_12),
+rdf <- create_subjectof(subject = hu12_basin_subject, 
+                      url = paste0(wbd_acnwc_base, hu12$HUC_12),
                       format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Waterbudget Summary",
                       rdf = rdf)
@@ -147,8 +147,8 @@ rdf <- create_association(subject = next_ds,
                           object = "https://geoconnex.ca/gsip/info/catchment/02OJ*CA", 
                           rdf = rdf)
 
-rdf <- create_seealso(subject = next_ds, 
-                      seealso = paste0(nldi_base, "huc12pp/041504081604"),
+rdf <- create_subjectof(subject = next_ds, 
+                      url = paste0(nldi_base, "huc12pp/041504081604"),
                       format = "application/vnd.geo+json",
                       label = "GeoJSON",
                       rdf = rdf)
@@ -180,8 +180,8 @@ for(h in names(hy_in)) {
   }
 }
 
-rdf  <- create_seealso(subject = paste0(wbd_nexus_base, nexus_wfs$nexus, "-inflow"),
-                       seealso = nexus_wfs$wfs,
+rdf  <- create_subjectof(subject = paste0(wbd_nexus_base, nexus_wfs$nexus, "-inflow"),
+                       url = nexus_wfs$wfs,
                        format = "application/vnd.geo+json",
                        label = "GeoJSON",
                        rdf = rdf)
@@ -213,20 +213,20 @@ rdf <- create_association(subject = outlet_subject,
                           object = paste0(wbd_nexus_base, hu12_outlet$HU_12_DS, "-inflow"),
                           rdf = rdf)
 
-rdf <- create_seealso(subject = outlet_subject,
-                      seealso = paste0(wbd_outlet_info_base, hu12_outlet$HUC_12),
+rdf <- create_subjectof(subject = outlet_subject,
+                      url = paste0(wbd_outlet_info_base, hu12_outlet$HUC_12),
                       format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = outlet_subject,
-                      seealso = paste0(fpp_wfs_base, "HUC_12%20IN%20(%27", hu12_outlet$HUC_12, "%27)"),
+rdf <- create_subjectof(subject = outlet_subject,
+                      url = paste0(fpp_wfs_base, "HUC_12%20IN%20(%27", hu12_outlet$HUC_12, "%27)"),
                       format = "application/vnd.geo+json",
                       label = "GeoJSON",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = outlet_subject,
-                      seealso = paste0(nldi_base, "huc12pp/", hu12_outlet$HUC_12),
+rdf <- create_subjectof(subject = outlet_subject,
+                      url = paste0(nldi_base, "huc12pp/", hu12_outlet$HUC_12),
                       format = "application/vnd.geo+json",
                       label = "GeoJSON",
                       rdf = rdf)
@@ -246,14 +246,14 @@ rdf <- create_association(subject = flowpath_subject,
                           object = hu12_basin_subject,
                           rdf = rdf)
 
-rdf <- create_seealso(subject = flowpath_subject,
-                      seealso = paste0(wbd_info_base, flowpath_id),
+rdf <- create_subjectof(subject = flowpath_subject,
+                      url = paste0(wbd_info_base, flowpath_id),
                       format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = flowpath_subject,
-                      seealso = paste0(nldi_base, "huc12pp/", hu12$HUC_12, "/navigate/UM"),
+rdf <- create_subjectof(subject = flowpath_subject,
+                      url = paste0(nldi_base, "huc12pp/", hu12$HUC_12, "/navigate/UM"),
                       format = "application/vnd.geo+json",
                       label = "GeoJSON",
                       rdf = rdf)
@@ -273,14 +273,14 @@ rdf <- create_association(subject = network_subject,
                           object = hu12_basin_subject,
                           rdf = rdf)
 
-rdf <- create_seealso(subject = network_subject,
-                      seealso = paste0(wbd_info_base, network_id),
+rdf <- create_subjectof(subject = network_subject,
+                      url = paste0(wbd_info_base, network_id),
                       format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = network_subject,
-                      seealso = paste0(nldi_base, "huc12pp/", hu12$HUC_12, "/navigate/UT"),
+rdf <- create_subjectof(subject = network_subject,
+                      url = paste0(nldi_base, "huc12pp/", hu12$HUC_12, "/navigate/UT"),
                       format = "application/vnd.geo+json",
                       label = "GeoJSON",
                       rdf = rdf)
@@ -299,14 +299,14 @@ rdf <- create_association(subject = hydrometric_network_subject,
                           object = hu12_basin_subject,
                           rdf = rdf)
 
-rdf <- create_seealso(subject = hydrometric_network_subject,
-                      seealso = paste0(wbd_info_base, hydrometric_network_id),
+rdf <- create_subjectof(subject = hydrometric_network_subject,
+                      url = paste0(wbd_info_base, hydrometric_network_id),
                       format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = hydrometric_network_subject,
-                      seealso = paste0(nldi_base, "huc12pp/", hu12$HUC_12, "/navigate/UT/nwissite"),
+rdf <- create_subjectof(subject = hydrometric_network_subject,
+                      url = paste0(nldi_base, "huc12pp/", hu12$HUC_12, "/navigate/UT/nwissite"),
                       format = "application/vnd.geo+json",
                       label = "GeoJSON",
                       rdf = rdf)
@@ -325,14 +325,14 @@ rdf <- create_association(subject = hydrometric_network_subject,
                           object = hu12_basin_subject,
                           rdf = rdf)
 
-rdf <- create_seealso(subject = hydrometric_network_subject,
-                      seealso = paste0(wbd_info_base, hydrometric_network_id),
+rdf <- create_subjectof(subject = hydrometric_network_subject,
+                      url = paste0(wbd_info_base, hydrometric_network_id),
                       format = c("text/html","application/rdf+xml","application/x-turtle","application/ld+json"),
                       label = "Information Index",
                       rdf = rdf)
 
-rdf <- create_seealso(subject = hydrometric_network_subject,
-                      seealso = paste0(nldi_base, "huc12pp/", hu12$HUC_12, "/navigate/UT/wqp"),
+rdf <- create_subjectof(subject = hydrometric_network_subject,
+                      url = paste0(nldi_base, "huc12pp/", hu12$HUC_12, "/navigate/UT/wqp"),
                       format = "application/vnd.geo+json",
                       label = "GeoJSON",
                       rdf = rdf)
