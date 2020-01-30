@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <backup xmlns="urn:csiro:xmlns:pidsvc:backup:1.0">
   <mapping>
-    <path>chyld-pilot/id/gage/04280450</path>
+    <path>/chyld-pilot/id/gage/04280450</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -12,7 +12,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04275500</path>
+    <path>/chyld-pilot/id/gage/04275500</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -23,7 +23,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04292700</path>
+    <path>/chyld-pilot/id/gage/04292700</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -34,7 +34,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04287000</path>
+    <path>/chyld-pilot/id/gage/04287000</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -45,7 +45,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04288230</path>
+    <path>/chyld-pilot/id/gage/04288230</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -56,7 +56,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04276842</path>
+    <path>/chyld-pilot/id/gage/04276842</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -67,7 +67,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04271815</path>
+    <path>/chyld-pilot/id/gage/04271815</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -78,7 +78,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04282780</path>
+    <path>/chyld-pilot/id/gage/04282780</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -89,7 +89,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04282813</path>
+    <path>/chyld-pilot/id/gage/04282813</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -100,7 +100,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030302</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030302</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -111,7 +111,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030302</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030302</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -122,7 +122,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504020107</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504020107</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -133,7 +133,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504020107</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504020107</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -144,7 +144,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150406</path>
+    <path>/chyld-pilot/id/hu/04150406</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -155,7 +155,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150406</path>
+    <path>/chyld-pilot/id/hu/04150406</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -166,7 +166,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150406</path>
+    <path>/chyld-pilot/id/hu/04150406</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -177,7 +177,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04292500</path>
+    <path>/chyld-pilot/id/gage/04292500</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -188,7 +188,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030402</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030402</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -199,7 +199,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030402</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030402</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -210,7 +210,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/well/USGS-445052073350201</path>
+    <path>/chyld-pilot/id/well/USGS-445052073350201</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -221,7 +221,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/well/USGS-445052073350201</path>
+    <path>/chyld-pilot/id/well/USGS-445052073350201</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -232,7 +232,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/nat_aq/N300NYSDSN</path>
+    <path>/chyld-pilot/id/nat_aq/N300NYSDSN</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -243,7 +243,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/nat_aq/N300NYSDSN</path>
+    <path>/chyld-pilot/id/nat_aq/N300NYSDSN</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -254,7 +254,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04288225</path>
+    <path>/chyld-pilot/id/gage/04288225</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -265,7 +265,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04280000</path>
+    <path>/chyld-pilot/id/gage/04280000</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -276,7 +276,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/well/USGS-443405072323501</path>
+    <path>/chyld-pilot/id/well/USGS-443405072323501</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -287,7 +287,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/well/USGS-443405072323501</path>
+    <path>/chyld-pilot/id/well/USGS-443405072323501</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -298,7 +298,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150408</path>
+    <path>/chyld-pilot/id/hu/04150408</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -309,7 +309,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150408</path>
+    <path>/chyld-pilot/id/hu/04150408</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -320,7 +320,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150408</path>
+    <path>/chyld-pilot/id/hu/04150408</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -331,7 +331,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504020203</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504020203</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -342,7 +342,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504020203</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504020203</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -353,7 +353,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04290500</path>
+    <path>/chyld-pilot/id/gage/04290500</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -364,7 +364,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080202</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080202</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -375,7 +375,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080202</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080202</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -386,7 +386,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080402</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080402</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -397,7 +397,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080402</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080402</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -408,7 +408,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080801</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080801</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -419,7 +419,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080801</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080801</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -430,7 +430,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504060504</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504060504</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -441,7 +441,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504060504</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504060504</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -452,7 +452,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081505</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081505</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -463,7 +463,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081505</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081505</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -474,7 +474,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04288000</path>
+    <path>/chyld-pilot/id/gage/04288000</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -485,7 +485,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504010203</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504010203</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -496,7 +496,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504010203</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504010203</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -507,7 +507,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04284000</path>
+    <path>/chyld-pilot/id/gage/04284000</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -518,7 +518,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030403</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030403</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -529,7 +529,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030403</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030403</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -540,7 +540,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04292810</path>
+    <path>/chyld-pilot/id/gage/04292810</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -551,7 +551,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030102</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030102</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -562,7 +562,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030102</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030102</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -573,7 +573,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150401</path>
+    <path>/chyld-pilot/id/hu/04150401</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -584,7 +584,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150401</path>
+    <path>/chyld-pilot/id/hu/04150401</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -595,7 +595,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150401</path>
+    <path>/chyld-pilot/id/hu/04150401</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -606,7 +606,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150403</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150403</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -617,7 +617,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150403</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150403</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -628,7 +628,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04273800</path>
+    <path>/chyld-pilot/id/gage/04273800</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -639,7 +639,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/well/USGS-434217073010601</path>
+    <path>/chyld-pilot/id/well/USGS-434217073010601</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -650,7 +650,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/well/USGS-434217073010601</path>
+    <path>/chyld-pilot/id/well/USGS-434217073010601</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -661,7 +661,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04289000</path>
+    <path>/chyld-pilot/id/gage/04289000</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -672,7 +672,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/well/USGS-441215072483101</path>
+    <path>/chyld-pilot/id/well/USGS-441215072483101</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -683,7 +683,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/well/USGS-441215072483101</path>
+    <path>/chyld-pilot/id/well/USGS-441215072483101</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -694,7 +694,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150402</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150402</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -705,7 +705,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150402</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150402</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -716,7 +716,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150408</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150408</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -727,7 +727,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150408</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150408</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -738,7 +738,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081402</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081402</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -749,7 +749,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081402</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081402</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -760,7 +760,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030602</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030602</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -771,7 +771,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030602</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030602</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -782,7 +782,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04282000</path>
+    <path>/chyld-pilot/id/gage/04282000</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -793,7 +793,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504040301</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504040301</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -804,7 +804,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504040301</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504040301</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -815,7 +815,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504050306</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504050306</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -826,7 +826,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504050306</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504050306</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -837,7 +837,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504020109</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504020109</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -848,7 +848,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504020109</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504020109</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -859,7 +859,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04282795</path>
+    <path>/chyld-pilot/id/gage/04282795</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -870,7 +870,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030704</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030704</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -881,7 +881,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030704</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030704</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -892,7 +892,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04286000</path>
+    <path>/chyld-pilot/id/gage/04286000</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -903,7 +903,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/nat_aq/N400NYNECB</path>
+    <path>/chyld-pilot/id/nat_aq/N400NYNECB</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -914,7 +914,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/nat_aq/N400NYNECB</path>
+    <path>/chyld-pilot/id/nat_aq/N400NYNECB</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -925,7 +925,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04282650</path>
+    <path>/chyld-pilot/id/gage/04282650</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -936,7 +936,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504020307</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504020307</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -947,7 +947,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504020307</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504020307</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -958,7 +958,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04292770</path>
+    <path>/chyld-pilot/id/gage/04292770</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -969,7 +969,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080707</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080707</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -980,7 +980,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080707</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080707</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -991,7 +991,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150402</path>
+    <path>/chyld-pilot/id/hu/04150402</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1002,7 +1002,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150402</path>
+    <path>/chyld-pilot/id/hu/04150402</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1013,7 +1013,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150402</path>
+    <path>/chyld-pilot/id/hu/04150402</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1024,7 +1024,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150405</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150405</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1035,7 +1035,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150405</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150405</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1046,7 +1046,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04282525</path>
+    <path>/chyld-pilot/id/gage/04282525</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1057,7 +1057,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04282500</path>
+    <path>/chyld-pilot/id/gage/04282500</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1068,7 +1068,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04281500</path>
+    <path>/chyld-pilot/id/gage/04281500</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1079,7 +1079,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04275000</path>
+    <path>/chyld-pilot/id/gage/04275000</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1090,7 +1090,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150407</path>
+    <path>/chyld-pilot/id/hu/04150407</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1101,7 +1101,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150407</path>
+    <path>/chyld-pilot/id/hu/04150407</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1112,7 +1112,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150407</path>
+    <path>/chyld-pilot/id/hu/04150407</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1123,7 +1123,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080302</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080302</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1134,7 +1134,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080302</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080302</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1145,7 +1145,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150403</path>
+    <path>/chyld-pilot/id/hu/04150403</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1156,7 +1156,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150403</path>
+    <path>/chyld-pilot/id/hu/04150403</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1167,7 +1167,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150403</path>
+    <path>/chyld-pilot/id/hu/04150403</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1178,7 +1178,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04276500</path>
+    <path>/chyld-pilot/id/gage/04276500</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1189,7 +1189,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080205</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080205</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1200,7 +1200,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080205</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080205</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1211,7 +1211,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150406</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150406</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1222,7 +1222,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150406</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150406</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1233,7 +1233,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04292000</path>
+    <path>/chyld-pilot/id/gage/04292000</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1244,7 +1244,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080802</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080802</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1255,7 +1255,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080802</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080802</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1266,7 +1266,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04273700</path>
+    <path>/chyld-pilot/id/gage/04273700</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1277,7 +1277,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04273500</path>
+    <path>/chyld-pilot/id/gage/04273500</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1288,7 +1288,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04271500</path>
+    <path>/chyld-pilot/id/gage/04271500</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1299,7 +1299,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080502</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080502</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1310,7 +1310,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504080502</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504080502</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1321,7 +1321,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504010305</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504010305</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1332,7 +1332,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504010305</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504010305</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1343,7 +1343,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04290335</path>
+    <path>/chyld-pilot/id/gage/04290335</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1354,7 +1354,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150404</path>
+    <path>/chyld-pilot/id/hu/04150404</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1365,7 +1365,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150404</path>
+    <path>/chyld-pilot/id/hu/04150404</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1376,7 +1376,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150404</path>
+    <path>/chyld-pilot/id/hu/04150404</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1387,7 +1387,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504050107</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504050107</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1398,7 +1398,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504050107</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504050107</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1409,7 +1409,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081603</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081603</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1420,7 +1420,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081603</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081603</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1431,7 +1431,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04285500</path>
+    <path>/chyld-pilot/id/gage/04285500</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1442,7 +1442,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504040105</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504040105</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1453,7 +1453,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504040105</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504040105</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1464,7 +1464,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04278300</path>
+    <path>/chyld-pilot/id/gage/04278300</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1475,7 +1475,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504010205</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504010205</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1486,7 +1486,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504010205</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504010205</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1497,7 +1497,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/well/USGS-443646073124901</path>
+    <path>/chyld-pilot/id/well/USGS-443646073124901</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1508,7 +1508,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/well/USGS-443646073124901</path>
+    <path>/chyld-pilot/id/well/USGS-443646073124901</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1519,7 +1519,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150404</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150404</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1530,7 +1530,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150404</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150404</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1541,7 +1541,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150405</path>
+    <path>/chyld-pilot/id/hu/04150405</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1552,7 +1552,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150405</path>
+    <path>/chyld-pilot/id/hu/04150405</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1563,7 +1563,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/hu/04150405</path>
+    <path>/chyld-pilot/id/hu/04150405</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1574,7 +1574,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04280350</path>
+    <path>/chyld-pilot/id/gage/04280350</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1585,7 +1585,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150401</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150401</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1596,7 +1596,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/04150401</path>
+    <path>/chyld-pilot/id/gage_hu_network/04150401</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1607,7 +1607,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081201</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081201</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1618,7 +1618,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081201</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081201</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1629,7 +1629,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node</path>
+    <path>/chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1640,7 +1640,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node</path>
+    <path>/chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1651,7 +1651,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node</path>
+    <path>/chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1662,7 +1662,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030603</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030603</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1673,7 +1673,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030603</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030603</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1684,7 +1684,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081204</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081204</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1695,7 +1695,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081204</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081204</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1706,7 +1706,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030504</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030504</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1717,7 +1717,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504030504</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504030504</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1728,7 +1728,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081302</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081302</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1739,7 +1739,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage_hu_network/041504081302</path>
+    <path>/chyld-pilot/id/gage_hu_network/041504081302</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
@@ -1750,7 +1750,7 @@
     </action>
   </mapping>
   <mapping>
-    <path>chyld-pilot/id/gage/04279000</path>
+    <path>/chyld-pilot/id/gage/04279000</path>
     <type>1:1</type>
     <description>made for GSIP / CHyLD pilot project testing</description>
     <creator>dblodgett@usgs.gov</creator>
