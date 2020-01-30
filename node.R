@@ -6,22 +6,28 @@ rdf <- create_association(paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_N
                           "https://geoconnex.ca/id/LOD_Node/CAN_Hydro_LOD_Node", rdf = rdf)
 
 rdf <- create_subjectof(subject = paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node"), 
-                      url = "https://raw.githubusercontent.com/dblodgett-usgs/GSIP/master/mockups/id/LOD_Node/US_Hydro_LOD_Node_TTL", 
-                      format = "application/x-turtle", 
-                      label = "Connection Nodes", 
-                      rdf = rdf)
+                        url = "https://cida-test.er.usgs.gov/chyld-pilot/data/node/cross", 
+                        format = c("application/x-turtle", "application/rdf+xml", "application/ld+json"),  
+                        label = "Connections to other nodes", 
+                        provider = "https://labs.waterdata.usgs.gov",
+                        conformsto = "https://github.com/NRCan/GSIP",
+                        rdf = rdf)
 
 rdf <- create_subjectof(subject = paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node"), 
-                      url = "https://raw.githubusercontent.com/dblodgett-usgs/GSIP/master/mockups/id/LOD_Node/US_Hydro_LOD_Node_RDF", 
-                      format = "application/rdf+xml", 
-                      label = "Connection Nodes", 
-                      rdf = rdf)
+                        url = "https://cida-test.er.usgs.gov/chyld-pilot/data/node/connect", 
+                        format = c("application/x-turtle", "application/rdf+xml", "application/ld+json"),  
+                        label = "Connected nodes", 
+                        provider = "https://labs.waterdata.usgs.gov",
+                        conformsto = "https://github.com/NRCan/GSIP",
+                        rdf = rdf)
 
 rdf <- create_subjectof(subject = paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node"), 
-                      url = "https://raw.githubusercontent.com/dblodgett-usgs/GSIP/master/mockups/id/LOD_Node/US_Hydro_LOD_Node_JSONLD", 
-                      format = "application/ld+json", 
-                      label = "Connection Nodes", 
-                      rdf = rdf)
+                        url = "https://cida-test.er.usgs.gov/chyld-pilot/data/node/all", 
+                        format = c("application/x-turtle", "application/rdf+xml", "application/ld+json"),  
+                        label = "Catalog of features", 
+                        provider = "https://labs.waterdata.usgs.gov",
+                        conformsto = "https://github.com/NRCan/GSIP",
+                        rdf = rdf)
 
 rdf <- create_association(paste0(domain, "chyld-pilot/id/LOD_Node/US_Hydro_LOD_Node"),
                    "http://www.w3.org/2000/01/rdf-schema#label",
@@ -33,19 +39,4 @@ rdf <- create_association("https://geoconnex.ca/id/LOD_Node/CAN_Hydro_LOD_Node",
 
 rdflib::rdf_serialize(rdf, "../GSIP/WebContent/repos/gsip/relations.ttl", "turtle")
 
-node_sparql <- paste0("PREFIX usgs: <", domain, "> ",
-                      "PREFIX ca: <https://geoconnex.ca> ",
-                      "SELECT * { ",
-                            "?subject ?predicate ?object . ",
-                            "FILTER(isUri(?object) && STRSTARTS(STR(?object), STR(ca:))) ",
-                            "}")
-
-outbound <- rdf_query(rdf, node_sparql)
-outbound <- add_to_rdf(outbound, rdf())
-
-rdf_serialize(outbound, "../GSIP/mockups/id/LOD_Node/US_Hydro_LOD_Node_TTL", format = "turtle")  
-rdf_serialize(outbound, "../GSIP/mockups/id/LOD_Node/US_Hydro_LOD_Node_RDF", format = "rdfxml")
-rdf_serialize(outbound, "../GSIP/mockups/id/LOD_Node/US_Hydro_LOD_Node_JSONLD", format = "jsonld")  
-
-rdf_serialize(outbound, "../GSIP/mockups/id/LOD_Node/US_Hydro_LOD_Node_TTL", format = "turtle")  
 

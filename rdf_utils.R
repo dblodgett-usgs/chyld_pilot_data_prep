@@ -6,13 +6,13 @@ library(HUCAgg)
 
   
 # Feature NIR base urls
-wbd_base <- paste0(domain, "chyld-pilot/id/hu/")
-wbd_outlet_base <- paste0(domain, "chyld-pilot/id/hu_outlet/")
-wbd_nexus_base <- paste0(domain, "chyld-pilot/id/hu_nexus/")
-nwis_gage_base <- paste0(domain, "chyld-pilot/id/gage/")
-nwis_hu_hydrometricnetwork_base <- paste0(domain, "chyld-pilot/id/gage_hu_network/")
-nat_aq_base <- paste0(domain, "chyld-pilot/id/nat_aq/")
-wells_base <- paste0(domain, "chyld-pilot/id/well/")
+wbd_base <- paste0(id_domain, "chyld-pilot/id/hu/")
+wbd_outlet_base <- paste0(id_domain, "chyld-pilot/id/hu_outlet/")
+wbd_nexus_base <- paste0(id_domain, "chyld-pilot/id/hu_nexus/")
+nwis_gage_base <- paste0(id_domain, "chyld-pilot/id/gage/")
+nwis_hu_hydrometricnetwork_base <- paste0(id_domain, "chyld-pilot/id/gage_hu_network/")
+nat_aq_base <- paste0(id_domain, "chyld-pilot/id/nat_aq/")
+wells_base <- paste0(id_domain, "chyld-pilot/id/well/")
 
 # gsip base urls
 wbd_info_base <- paste0(domain, "chyld-pilot/info/hu/")
@@ -48,7 +48,11 @@ split_subjectof <- function(x) {
         select(x, subject = url, object = format) %>%
           mutate(predicate = paste0(dct_base, "format")),
         select(x, subject = url, object = label) %>%
-          mutate(predicate = paste0(rdf_base, "label"))) %>%
+          mutate(predicate = paste0(rdf_base, "label")),
+        select(x, subject = url, object = provider) %>%
+          mutate(predicate = paste0(schema_base, "provider")),
+        select(x, subject = url, object = conformsto) %>%
+          mutate(predicate = paste0(dct_base, "conformsTo"))) %>%
     select(subject, predicate, object)
 }
 
@@ -60,12 +64,16 @@ add_to_rdf <- function(x, rdf) { # dumb implementation, but it does the job!
   return(rdf)
 }
 
-create_subjectof <- function(subject, url, format, label = "", rdf = NULL) {
+create_subjectof <- function(subject, url, format, label = "", 
+                             provider = "https://labs.waterdata.usgs.gov", conformsto = "https://github.com/NRCan/GSIP", 
+                             rdf = NULL) {
   ld <- lapply(format, function(x) {
     data.frame(subject = subject, 
                url = url, 
                format = x, 
                label = label, 
+               provider = provider,
+               conformsto = conformsto,
                stringsAsFactors = FALSE)
   }) %>%
     bind_rows() %>%

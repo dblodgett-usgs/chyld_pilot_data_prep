@@ -339,7 +339,7 @@ rdf <- create_subjectof(subject = hydrometric_network_subject,
 
 #### Find overlaps with the Southern St Lawrence Platform hydrogeounit.
 
-hgu <- read_sf("https://geoconnex.ca/data/aquifer/gwml/gwml/GIN/Richelieu1?f=geojson")
+hgu <- read_sf("https://geoconnex.ca/gsip/resources/aq/aq1")
 hu12 <- st_join(hu12, select(hgu, hgu_uri = uri))
 
 overlaps <- filter(hu12, !is.na(hu12$hgu_uri))

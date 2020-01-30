@@ -1,3 +1,4 @@
+id_domain <- "http://geoconnex.us/"
 domain <- "https://cida-test.er.usgs.gov/"
 # domain <- "http://localhost:8080/"
 
